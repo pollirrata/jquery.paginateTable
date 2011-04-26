@@ -1,5 +1,5 @@
 /*
-paginateTable 1.2
+paginateTable 1.3
 Copyright 2010-2011,  Matthew Page
 licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
 
@@ -74,7 +74,7 @@ Thanks to Leon for the fix related to table changes.
           var pager = $(settings.pager);
           var nextPage = pager.find(settings.nextPage);
           var prevPage = pager.find(settings.prevPage);
-          var currentPage = pager.find(settings.currentPage);
+          var currentPage = pager.find(settings.currentPage).first();
           nextPage.unbind('click');
           nextPage.click(function(){
                   var pageNum = getCurrentPage(currentPage.text());
